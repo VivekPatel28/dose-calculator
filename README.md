@@ -5,7 +5,7 @@ The Dose Calculator App is a tool designed to assist healthcare professionals an
 ## Features
 
 - **Fast-Lane Items:** Quickly calculate recommended doses for common medications like paracetamol and ibuprofen. Copy instructions with a single click.
-- **Advanced Calculator:** Enter dose in ml, convert to ideal body weight, and copy instructions.
+- **Advanced Calculator:** Enter dose in ml, convert to ideal body weight or convert the entered dose to the recommended dose for other provided medications, and copy instructions.
 - **Manual Calculator:** Calculate personalized dose based on patient's weight, recommended dose, and medication strength.
 - **Auto-Copy Option:** Streamline copying of dosage instructions. Enable "Auto-copy" for automatic copying when selecting Fast-Lane items.
 - **Auto-Minimize Feature:** Enhance efficiency by minimizing the application after copying instructions.
@@ -25,7 +25,3 @@ The Dose Calculator App is a tool designed to assist healthcare professionals an
 ## Support and Feedback
 
 If you have any technical issues or suggestions for improving the Dose Calculator application, please contact our support team at [vivpate228@email.com](mailto:vivpatel228@email.com).
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
