@@ -25,3 +25,7 @@ The Dose Calculator App is a tool designed to assist healthcare professionals an
 ## Support and Feedback
 
 If you have any technical issues or suggestions for improving the Dose Calculator application, please contact our support team at [vivpate228@email.com](mailto:vivpatel228@email.com).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
