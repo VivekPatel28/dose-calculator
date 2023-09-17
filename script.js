@@ -1,14 +1,19 @@
 
+document.addEventListener("DOMContentLoaded", function () {
+  const toastTrigger = document.getElementById("liveToastBtn");
+  const toastLiveExample = document.getElementById("liveToast");
 
-const toastTrigger = document.getElementById('liveToastBtn')
-const toastLiveExample = document.getElementById('liveToast')
+  if (toastTrigger) {
+    // Initialize the Bootstrap toast instance
+    const toastBootstrap = new bootstrap.Toast(toastLiveExample);
 
-if (toastTrigger) {
-  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
-  toastTrigger.addEventListener('click', () => {
-    toastBootstrap.show()
-  })
-}
+    // Add a click event listener to the button
+    toastTrigger.addEventListener("click", function () {
+      // Show the Bootstrap toast when the button is clicked
+      toastBootstrap.show();
+    });
+  }
+});
 
 const exampleModal = document.getElementById('exampleModal')
 if (exampleModal) {

@@ -1,115 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Dose Calculator App</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./script.js"></script>
 </head>
-<body>
+
+<body style="background-image: url('./assets/purple-blue-wallpaper-with-colorful-swirl.jpg'); background-size: cover; background-position: center;">
     <header>
-        <nav class="navbar navbar-expand-sm fixed-top" style="background-color: #e3f2fd;">
-            <div class="container-fluid" >
-                <a class="navbar-brand mb-0 h1" href="index.html">
-                    <img src="./assets/rx-logo.png" alt="Logo" width="40" height="34" class="d-inline-block align-text-top p-1">
-                Dose calculator</a>
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white mb-0 h1" href="index.html">
+                    <img src="./assets/rx-logo.png" alt="Logo" width="40" height="34"
+                        class="d-inline-block align-text-top p-1">
+                    Dose calculator</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav nav-underline me-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link "  href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="download.html">Download</a></li>
-            </ul>
-            <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success disabled" aria-disabled="true" type="submit">Search</button>
-      </form>
-            
-        </div>
-        </div>
+                    <ul class="navbar-nav ml-auto nav-underline me-auto mb-lg-0">
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="download.html">Download</a></li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success disabled" aria-disabled="true"
+                            type="submit">Search</button>
+                    </form>
+
+                </div>
+            </div>
         </nav>
     </header>
-    
-    <section class="hero p-3 ">
+    <section class="hero p-5 text-white">
         <div class="container-fluid">
-            <br/>
-            <br/>
+            <br />
+            <br />
         </div>
         <div class="container">
             <h1>About the Dose Calculator App</h1>
-            <hr/>
-            <div class="row p-3 mb-2 bg-success-subtle text-emphasis-success"><p>The Dose Calculator application is designed to assist healthcare professionals and dispensary staff in making accurate medication dose calculations for pediatric patients. The application simplifies the process of converting between bodyweight and dose, allowing for quick and efficient calculations.</p>
+            <hr />
+            <div class="row p-3 mb-2 text-info">
+                <p>The Dose Calculator application is designed to assist healthcare professionals and dispensary staff
+                    in making accurate medication dose calculations for pediatric patients. The application simplifies
+                    the process of converting between bodyweight and dose, allowing for quick and efficient
+                    calculations.</p>
             </div>
-            <br/>
+            <br />
             <h2>Main Features:</h2>
-            <div class="row p-3 mb-2 bg-success-subtle text-emphasis-success">
-            <ul >
-                <li>Fast-Lane Items: Quickly calculate recommended doses for common medications like paracetamol and ibuprofen. Copy instructions with a single click.</li>
-                <li>Advanced Calculator: Enter dose in ml, convert to ideal body weight or convert the entered dose to the recommended dose for other provided medications, and copy instructions.</li>
-                <li>Manual Calculator: Calculate personalized dose based on patient's weight, recommended dose, and medication strength.</li>
-                <li>Auto-Copy Option: Streamline copying of dosage instructions. Enable "Auto-copy" for automatic copying when selecting Fast-Lane items.</li>
-                <li>Auto-Minimize Feature: Enhance efficiency by minimizing the application after copying instructions.</li>
-            </ul>
-        
-        </div>
+            <div class="row p-3 mb-2 text-info">
+                <ul>
+                    <li>Fast-Lane Items: Quickly calculate recommended doses for common medications like paracetamol and
+                        ibuprofen. Copy instructions with a single click.</li>
+                    <li>Advanced Calculator: Enter dose in ml, convert to ideal body weight or convert the entered dose
+                        to the recommended dose for other provided medications, and copy instructions.</li>
+                    <li>Manual Calculator: Calculate personalized dose based on patient's weight, recommended dose, and
+                        medication strength.</li>
+                    <li>Auto-Copy Option: Streamline copying of dosage instructions. Enable "Auto-copy" for automatic
+                        copying when selecting Fast-Lane items.</li>
+                    <li>Auto-Minimize Feature: Enhance efficiency by minimizing the application after copying
+                        instructions.</li>
+                </ul>
+
+            </div>
             <br>
-            
+
             <h2>Screenshots:</h2>
 
             <p class="d-inline-flex gap-1">
-  
-  <button class="btn btn-outline-success focus-ring focus-ring-success" type="button" data-bs-toggle="collapse" data-bs-target="#home" aria-expanded="false" aria-controls="home">Home</button>
-  <button class="btn btn-outline-success focus-ring focus-ring-success" type="button" data-bs-toggle="collapse" data-bs-target="#advance" aria-expanded="false" aria-controls="advance">Advance Calculator</button>
-  <button class="btn btn-outline-success focus-ring focus-ring-success" type="button" data-bs-toggle="collapse" data-bs-target="#manual" aria-expanded="false" aria-controls="manual">Manual Calculator</button>
-  <button class="btn btn-outline-success focus-ring focus-ring-success" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="home advance manual">Display All</button>
-</p>
 
-  <div class="col">
-    <div class="collapse multi-collapse collapse-horizontal" id="home">
-      <div class="container-lg text-center shadow-lg p-3 mb-5 bg-body-tertiary rounded border border-success">
-        <div class="row">
-            <div class="col"><img class="img-fluid rounded mx-auto d-block" src="./screenshots/Screenshot-home.jpg" alt="Home-Screen"></div>
-            
-        </div>
-     </div>
-    </div>
-  </div>
+                <button class="btn btn-outline-success focus-ring focus-ring-success" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#home" aria-expanded="false"
+                    aria-controls="home">Home</button>
+                <button class="btn btn-outline-success focus-ring focus-ring-success" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#advance" aria-expanded="false"
+                    aria-controls="advance">Advance Calculator</button>
+                <button class="btn btn-outline-success focus-ring focus-ring-success" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#manual" aria-expanded="false"
+                    aria-controls="manual">Manual Calculator</button>
+                <button class="btn btn-outline-success focus-ring focus-ring-success" type="button"
+                    data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false"
+                    aria-controls="home advance manual">Display All</button>
+            </p>
 
-  <div class="col">
-    <div class="collapse multi-collapse collapse-horizontal" id="advance">
-      <div class="container-lg text-center shadow-lg p-3 mb-5 bg-body-tertiary rounded border border-success">
-        <div class="row">
-            <div class="col"><img class="img-fluid rounded d-block" src="./screenshots/Screenshot-Advance1.jpg" alt="Advance-Screen"></div>
-            <div class="col"><img class="img-fluid rounded d-block" src="./screenshots/Screenshot-Advance2.jpg" alt="Home-Screen"></div>
-        </div>
-        </div>
-    </div>
-  </div>
+            <div class="col">
+                <div class="collapse multi-collapse collapse-horizontal" id="home">
+                    <div
+                        class="container-lg text-center shadow-lg p-3 mb-5 bg-body-tertiary rounded border border-success">
+                        <div class="row">
+                            <div class="col"><img class="img-fluid rounded mx-auto d-block"
+                                    src="./screenshots/Screenshot-home.jpg" alt="Home-Screen"></div>
 
-  <div class="col">
-    <div class="collapse multi-collapse collapse-horizontal" id="manual">
-      <div class="container-lg text-center shadow-lg p-3 mb-5 bg-body-tertiary rounded border border-success">
-        <div class="row">
-            <div class="col"><img class="img-fluid rounded mx-auto d-block" src="./screenshots/Screenshot-Manual.jpg" alt="Home-Screen"></div>
-        </div>
-        </div>
-    </div>
-  </div>
-  <br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="collapse multi-collapse collapse-horizontal" id="advance">
+                    <div
+                        class="container-lg text-center shadow-lg p-3 mb-5 bg-body-tertiary rounded border border-success">
+                        <div class="row">
+                            <div class="col"><img class="img-fluid rounded d-block"
+                                    src="./screenshots/Screenshot-Advance1.jpg" alt="Advance-Screen"></div>
+                            <div class="col"><img class="img-fluid rounded d-block"
+                                    src="./screenshots/Screenshot-Advance2.jpg" alt="Home-Screen"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="collapse multi-collapse collapse-horizontal" id="manual">
+                    <div
+                        class="container-lg text-center shadow-lg p-3 mb-5 bg-body-tertiary rounded border border-success">
+                        <div class="row">
+                            <div class="col"><img class="img-fluid rounded mx-auto d-block"
+                                    src="./screenshots/Screenshot-Manual.jpg" alt="Home-Screen"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
             <h2>Important Notes:</h2>
-            <div class="row p-3 mb-2 bg-success-subtle text-emphasis-success"><ul>
-                <li>The Dose Calculator application provides accurate calculations based on recommended doses from the NZF website. However, individual patient circumstances and medical conditions may vary.</li>
-                <li>The application is not a replacement for professional medical judgment and clinical decision-making. Always exercise caution and use your own discretion when utilizing the application.</li>
-            </ul>
-        </div>
+            <div class="row p-3 mb-2 text-warning">
+                <ul>
+                    <li>The Dose Calculator application provides accurate calculations based on recommended doses from
+                        the NZF website. However, individual patient circumstances and medical conditions may vary.</li>
+                    <li>The application is not a replacement for professional medical judgment and clinical
+                        decision-making. Always exercise caution and use your own discretion when utilizing the
+                        application.</li>
+                </ul>
+            </div>
             <br>
             <h2>Support and Feedback:</h2>
-            <div class="row p-3 mb-2 bg-success-subtle text-emphasis-success"><p>If you have any technical issues or suggestions for improving the Dose Calculator application, please reach out at <a href="mailto:vivpatel228@gmail.com">vivpatel228@gmail.com</a>.</p>
+            <div class="row p-3 mb-2 text-light">
+                <p>If you have any technical issues or suggestions for improving the Dose Calculator application, please
+                    reach out at <a href="mailto:vivpatel228@gmail.com">vivpatel228@gmail.com</a>.</p>
             </div>
         </div>
     </section>
-    <footer>
-        <div class="fixed-bottom text-center"><p>Dose Calculator App @2023</p></div>
+    <footer class="text-white text-center py-1" style=" bottom: 0; width: 100%;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p></p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <strong>Address:</strong>
+                    </address>
+                    <p><strong>Email:</strong> vivpatel228@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white">About</a></li>
+                        <li><a href="download.html" class="text-white">Download</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p>&copy; 2023 Dose Calculator App</p>
+        </div>
     </footer>
 </body>
+
 </html>
