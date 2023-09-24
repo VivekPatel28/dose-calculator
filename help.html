@@ -14,7 +14,7 @@
        
 </head>
 
-<body >
+<body style="background-image: url('./assets/vivid-background.jpg'); background-size: cover; background-position:inherit;">
     <header>
         <nav class="navbar navbar-expand-sm">
             <div class="container-fluid">
@@ -33,20 +33,21 @@
                         <li class="nav-item"><a class="nav-link " href="download.html">Download</a></li>
                     </ul>
                     <button class="btn btn-lg">
-                        <a class="text-dark" href="./help.html">
-                        <i class="bi bi-question-lg"></i>
-                    </a>
-                    </button>
+                      <a class="" href="./help.html">
+                      <i class="bi bi-question-lg"></i>
+                  </a>
+                  </button>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success disabled" aria-disabled="true"
                             type="submit">Search</button>
                     </form>
+  
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container-fluid p-5">
+    <div class="container-fluid p-5 col-md-12">
         <h2>Welcome to the Dose Calculator Help Center</h2>
         <br/>
         <h4>About the Dose Calculator Application:</h4>
@@ -73,7 +74,7 @@
                 software.</li>
         </ul>
 
-        <h4>Advanced Calculator (Accessible from Menu):</h4>
+        <h4>Advanced Calculator (Accessible from Menu-bar):</h4>
         <p>
             The advanced calculator provides a more comprehensive approach to dose calculations. Key features include:
         </p>
@@ -85,7 +86,7 @@
                 use.</li>
         </ul>
 
-        <h4>Manual Calculator (Accessible from Menu):</h4>
+        <h4>Manual Calculator (Accessible from Menu-bar):</h4>
         <p>
             The manual calculator allows for precise calculations based on patient-specific information. It offers:
         </p>
@@ -115,6 +116,33 @@
             the safety and well-being of pediatric patients.
         </p>
     </div>
+    <footer class="text-center py-1" style=" bottom: 0; width: 100%;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <h6>About Us</h6>
+                    <p></p>
+                </div>
+                <div class="col-md-4">
+                    <h6>Contact Us</h6>
+                    <address>
+                        <span>Address:</span>
+                    </address>
+                    <p><span>Email:</span> vivpatel228@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-dark">About</a></li>
+                        <li><a href="download.html" class="text-dark">Download</a></li>
+                        <li><a href="help.html" class="text-dark">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p>&copy; 2023 Dose Calculator App</p>
+        </div>
+    </footer>
 </body>
 
 </html>

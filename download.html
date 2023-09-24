@@ -11,14 +11,40 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+      .hero {
+           /* background-color: #f0f0f0; */
+          padding: 50px 0;
+      }
+
+      .hero h1 {
+          font-size: 3rem; /* Large font size for the heading */
+      }
+
+      .hero p {
+          font-size: 1.5rem; /* Slightly larger font size for the text */
+      }
+
+      .hero .btn {
+          font-size: 1.25rem; /* Slightly larger font size for the button text */
+          padding: 10px 20px; /* Add some padding to the button */
+          border-radius: 25px; /* Round the button corners */
+      }
+
+      .hero img {
+          max-width: 100%; /* Ensure the image doesn't exceed its container */
+          height: auto; /* Maintain the image's aspect ratio */
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Add a subtle shadow to the image */
+      }
+  </style>
   <script type="text/javascript" src="./script.js"></script>
 </head>
 
-<body style="background-image: url('./assets/purple-blue-wallpaper-with-colorful-swirl.jpg'); background-size: cover; background-position:inherit;">
+<body style="background-image: url('./assets/vivid-background.jpg'); background-size: cover; background-position:inherit;">
   <header>
       <nav class="navbar navbar-expand-sm">
           <div class="container-fluid">
-              <a class="navbar-brand text-white mb-0 h1" href="index.html">
+              <a class="navbar-brand mb-0 h1" href="index.html">
                   <img src="./assets/rx-logo.png" alt="Logo" width="40" height="34"
                       class="d-inline-block align-text-top p-1">
                   Dose calculator</a>
@@ -28,12 +54,12 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ml-auto nav-underline me-auto mb-lg-0">
-                      <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-                      <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
-                      <li class="nav-item"><a class="nav-link text-white" href="download.html">Download</a></li>
+                      <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+                      <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
+                      <li class="nav-item"><a class="nav-link " href="download.html">Download</a></li>
                   </ul>
                   <button class="btn btn-lg">
-                    <a class="text-white" href="./help.html">
+                    <a class="" href="./help.html">
                     <i class="bi bi-question-lg"></i>
                 </a>
                 </button>
@@ -49,31 +75,34 @@
   </header>
   <section class="hero p-3">
     <div class="container-fluid">
+      
       <br />
       <br />
       <br />
     </div>
-    <div class="container-lg text-center shadow-lg p-3 mb-5 bg-body-tertiary rounded border border-success">
-      <div class="row">
+    <div class="container-lg text-center shadow-lg p-3 col-md-10 mb-5 bg-body-tertiary rounded border border-success">
+      
         <h1>Download and Install the Dose Calculator App</h1>
         <hr>
         <br>
         <div class="container-sm rounded">
           <div class="col-md-auto p-1 mb-2 bg-info-subtle text-emphasis-success ">
-          <p>Click the link below to download the installation package. Follow the instructions to install the
-            application:</p>
+          <span>Click the link below to download the latest version of the application, and follow the Installation instructions to install the
+            application. (to download older versions click <a href="./oldApps.html">here</a>)</span>
         </div>
       </div>
-        
+      
         <br>
         <div class="col align-self-center">
           <a href="./assets/Dose_Calculator_App_V206.msi" role="button" class="btn btn-outline-success">Download Now</a>
         </div>
       </div>
-    </div>
+      
+    
   </section>
   <section class="hero p-3">
-    <div class="container-lg text-center shadow-lg p-3 mb-5 bg-body-tertiary rounded border border-info">
+    
+    <div class="container-lg text-center shadow-lg p-3 col-md-10 mb-5 bg-body-tertiary rounded border border-info">
       <h2>Installation Instructions:</h2>
       <hr>
       <br>
@@ -86,13 +115,45 @@
           installation.</li>
       </ul>
       <hr />
-      <p>If you encounter any issues during the installation process, please reach out at <a
-          href="mailto:vivpatel228@gmail.com">vivpatel228@gmail.com</a>.</p>
+      <span>If you encounter any issues during the installation process, please reach out at <a
+          href="mailto:vivpatel228@gmail.com">vivpatel228@gmail.com</a>.</span>
+      </div>
+      
+
+  </section>
+  <footer class="text-center py-1" style=" bottom: 0; width: 100%;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <h6>About Us</h6>
+                <p></p>
+            </div>
+            <div class="col-md-4">
+                <h6>Contact Us</h6>
+                <address>
+                    <span>Address:</span>
+                </address>
+                <p><span>Email:</span> vivpatel228@gmail.com</p>
+            </div>
+            <div class="col-md-4">
+                <h6>Quick Links</h6>
+                <ul class="list-unstyled">
+                    <li><a href="about.html" class="text-dark">About</a></li>
+                    <li><a href="download.html" class="text-dark">Download</a></li>
+                    <li><a href="help.html" class="text-dark">Help</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p>&copy; 2023 Dose Calculator App</p>
+    </div>
+</footer>
+</body>
+
+</html>
 
 
-
-
-          <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+  <!-- <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
 
             <div class="toast-container position-fixed bottom-0 end-0 p-3">
                 <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
@@ -143,36 +204,4 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-  </section>
-  <footer class="text-white text-center py-1" style=" bottom: 0; width: 100%;">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4">
-                <h5>About Us</h5>
-                <p></p>
-            </div>
-            <div class="col-md-4">
-                <h5>Contact Us</h5>
-                <address>
-                    <strong>Address:</strong>
-                </address>
-                <p><strong>Email:</strong> vivpatel228@gmail.com</p>
-            </div>
-            <div class="col-md-4">
-                <h5>Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="about.html" class="text-white">About</a></li>
-                    <li><a href="download.html" class="text-white">Download</a></li>
-                </ul>
-            </div>
-        </div>
-        <hr>
-        <p>&copy; 2023 Dose Calculator App</p>
-    </div>
-</footer>
-</body>
-
-</html>
+        </div> -->
