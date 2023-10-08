@@ -13,19 +13,42 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
         <style>
             .highlight {
-                background-color: yellow;
-                /* Set the background color to highlight */
+            background-color: yellow;
+        }
+            .hero {
+                
+                padding: 50px 0;
             }
-            </style>
+    
+            .hero h1 {
+                font-size: 3rem; 
+            }
+    
+            .hero p {
+                font-size: 1.5rem; 
+            }
+    
+            .hero .btn {
+                font-size: 1rem; 
+                padding: 10px 20px; 
+                border-radius: 10px;
+            }
+    
+            .hero img {
+                max-width: 100%;
+                height: auto; 
+                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
+            }
+        </style>
              <script type="text/javascript" src="./script.js"></script>
        
 </head>
 
-<body style="background-image: url('./assets/vivid-background.jpg'); background-size: cover; background-position:inherit;">
+<body>
     <header>
-        <nav class="navbar navbar-expand-sm">
+        <nav class="navbar navbar-expand-sm" style="background-image: url('./assets/vivid-background.jpg'); background-size: cover; background-position:inherit;">
             <div class="container-fluid">
-                <a class="navbar-brand mb-0 " href="index.html">
+                <a class="navbar-brand mb-0" href="index.html">
                     <img src="./assets/rx-logo.png" alt="Logo" width="40" height="34"
                         class="d-inline-block align-text-top p-1">
                     Dose calculator</a>
@@ -48,13 +71,14 @@
                     <input id="searchInput" class="form-control me-2" type="search" placeholder="Search"
                         aria-label="Search">
                     <button class="btn btn-outline-success" id="searchButton" type="button">Search</button>
-
+  
                 </form>
   
                 </div>
             </div>
         </nav>
     </header>
+    <div style="background-image: url('./assets/vivid-background.jpg'); background-size: cover; background-position:inherit;">
     <div class="container-fluid p-5 col-md-12">
         <h2>Welcome to the Dose Calculator Help Center</h2>
         <br/>
@@ -129,6 +153,7 @@
             <p>&copy; 2023 Dose Calculator App</p>
         </div>
     </footer>
+</div>
 </body>
 
 </html>

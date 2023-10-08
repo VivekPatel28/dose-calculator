@@ -13,27 +13,41 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <style>
         .highlight {
-            background-color: yellow;
-            /* Set the background color to highlight */
-        }
+        background-color: yellow;
+    }
         .hero {
-            background-color:transparent;
-            padding: 30px 0;
+            
+            padding: 50px 0;
         }
 
+        .hero h1 {
+            font-size: 3rem; 
+        }
 
-        .hero .list-group-item:hover {
-            background-color: #f8f9fa; /* Light gray background on hover */
+        .hero p {
+            font-size: 1.5rem; 
+        }
+
+        .hero .btn {
+            font-size: 1rem; 
+            padding: 10px 20px; 
+            border-radius: 10px;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto; 
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
         }
     </style>
   <script type="text/javascript" src="./script.js"></script>
 </head>
 
-<body style="background-image: url('./assets/vivid-background.jpg'); background-size: cover; background-position:inherit;">
+<body >
     <header>
-        <nav class="navbar navbar-expand-sm">
+        <nav class="navbar navbar-expand-sm" style="background-image: url('./assets/vivid-background.jpg'); background-size: cover; background-position:inherit;">
             <div class="container-fluid">
-                <a class="navbar-brand mb-0 " href="index.html">
+                <a class="navbar-brand mb-0" href="index.html">
                     <img src="./assets/rx-logo.png" alt="Logo" width="40" height="34"
                         class="d-inline-block align-text-top p-1">
                     Dose calculator</a>
@@ -56,42 +70,50 @@
                     <input id="searchInput" class="form-control me-2" type="search" placeholder="Search"
                         aria-label="Search">
                     <button class="btn btn-outline-success" id="searchButton" type="button">Search</button>
-
+  
                 </form>
   
                 </div>
             </div>
         </nav>
     </header>
-    <section class="hero p-3">
-        <div class="container-sm text-center shadow-lg p-3 col-md-8 mb-5 bg-body-tertiary rounded border border-info">
-            <h2>Older Versions of the Dose Calculator App</h2>
+    <div style="background-image: url('./assets/vivid-background.jpg'); background-size: cover; background-position:inherit;">
+    <section class="hero p-5">
+        <div class="container-sm text-center shadow-lg p-3 col-md-5 rounded border" style="background-image: url('./assets/vivid-background.jpg'); background-size: cover; background-position:bottom;">
+            <h3>Older Versions of the Dose Calculator App</h3>
             <hr>
             <br>
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
-                    <ul class="list-group">
+            <div class="">
+                <div class="">
+                    <ul class="">
                         <li class="list-group-item">
-                            <a href="./assets/Dose CalculatorV1.msi">Dose Calculator App V1.00</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="./assets/DoseCalculationSetupV2.msi">Dose Calculator App V2.00</a>
+                            <a href="./assets/Dose_Calculator_App_V206.msi">Dose Calculator App V2.06</a>
                         </li>
                         <li class="list-group-item">
                             <a href="./assets/Dose_Calculator_App_V204.msi">Dose Calculator App V2.04</a>
                         </li>
                         <li class="list-group-item">
-                            <a href="./assets/Dose_Calculator_App_V206.msi">Dose Calculator App V2.06</a>
+                            <a href="./assets/DoseCalculationSetupV2.msi">Dose Calculator App V2.00</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="./assets/Dose CalculatorV1.msi">Dose Calculator App V1.00</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4"></div>
             </div>
             <hr />
         </div>
     </section>
   <br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <br/>
 <br/>
 <br/>
@@ -106,6 +128,7 @@
         <p>&copy; 2023 Dose Calculator App</p>
     </div>
 </footer>
+</div>
 </body>
 
 </html>

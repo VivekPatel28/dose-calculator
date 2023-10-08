@@ -14,39 +14,38 @@
         <style>
             .highlight {
             background-color: yellow;
-            /* Set the background color to highlight */
         }
             .hero {
-                 /* background-color: #f0f0f0; */
+                
                 padding: 50px 0;
             }
     
             .hero h1 {
-                font-size: 3rem; /* Large font size for the heading */
+                font-size: 3rem; 
             }
     
             .hero p {
-                font-size: 1.5rem; /* Slightly larger font size for the text */
+                font-size: 1.5rem; 
             }
     
             .hero .btn {
-                font-size: 1.25rem; /* Slightly larger font size for the button text */
-                padding: 10px 20px; /* Add some padding to the button */
-                border-radius: 25px; /* Round the button corners */
+                font-size: 1rem; 
+                padding: 10px 20px; 
+                border-radius: 10px;
             }
     
             .hero img {
-                max-width: 100%; /* Ensure the image doesn't exceed its container */
-                height: auto; /* Maintain the image's aspect ratio */
-                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Add a subtle shadow to the image */
+                max-width: 100%;
+                height: auto; 
+                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
             }
         </style>
     <script type="text/javascript" src="./script.js"></script>
 </head>
 
-<body style="background-image: url('./assets/vivid-background.jpg'); background-size: cover; background-position:inherit;">
+<body >
     <header>
-        <nav class="navbar navbar-expand-sm">
+        <nav class="navbar navbar-expand-sm" style="background-image: url('./assets/vivid-background.jpg'); background-size: cover; background-position:inherit;">
             <div class="container-fluid">
                 <a class="navbar-brand mb-0" href="index.html">
                     <img src="./assets/rx-logo.png" alt="Logo" width="40" height="34"
@@ -71,20 +70,19 @@
                     <input id="searchInput" class="form-control me-2" type="search" placeholder="Search"
                         aria-label="Search">
                     <button class="btn btn-outline-success" id="searchButton" type="button">Search</button>
-
+  
                 </form>
   
                 </div>
             </div>
         </nav>
     </header>
+    <div style="background-image: url('./assets/vivid-background.jpg'); background-size: cover; background-position:inherit;">
     <section class="hero p-1 container">
         <div class="">
-            <h1 class="text-center">About Me and This Application</h1>
+            <h1 class="text-center">About This Application</h1>
             <hr />
             <div class=" p-2 mb-2">
-                <p>I'm a dedicated pharmacy technician with a passion for both healthcare and software development. Currently pursuing studies in software development, I recognized the need for a reliable tool to simplify pediatric dose calculations, a routine task in our daily pharmacy operations. This application is a result of that vision – an aid for healthcare professionals like us. Please remember, while this app can be a valuable reference, it is not intended to replace established applications, standardized references, or the professional judgment of medical experts.
-                </p>
                 <p>The Dose Calculator application is designed to assist healthcare professionals and dispensary staff
                     in making accurate medication dose calculations for pediatric patients. The application simplifies
                     the process of converting between bodyweight and dose, allowing for quick and efficient
@@ -182,6 +180,11 @@
                 <div>If you have any technical issues or suggestions for improving the Dose Calculator application, please
                     reach out at <a href="mailto:vivpatel228@gmail.com">vivpatel228@gmail.com</a>.</div>
             </div>
+            <h2>About me</h2>
+            <div class="row p-3 mb-2">
+                <div>I'm a dedicated pharmacy technician with a passion for both healthcare and software development. Currently pursuing studies in software development, I recognized the need for a reliable tool to simplify pediatric dose calculations, a routine task in our daily pharmacy operations. This application is a result of that vision – an aid for healthcare professionals like us. Please remember, while this app can be a valuable reference, it is not intended to replace established applications, standardized references, or the professional judgment of medical experts.
+                </div>
+            </div>
         </div>
     </section>
     <footer class="text-center py-1" style=" bottom: 0; width: 100%;">
@@ -190,6 +193,7 @@
             <p>&copy; 2023 Dose Calculator App</p>
         </div>
     </footer>
+    </div>
 </body>
 
 </html>
