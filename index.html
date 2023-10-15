@@ -5,113 +5,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dose Calculator App</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <style>
-        .highlight {
-        background-color: yellow;
-    }
-        .hero {
-            
-            padding: 50px 0;
-        }
-
-        .hero h1 {
-            font-size: 3rem; 
-        }
-
-        .hero p {
-            font-size: 1.5rem; 
-        }
-
-        .hero .btn {
-            font-size: 1rem; 
-            padding: 10px 20px; 
-            border-radius: 10px;
-        }
-
-        .hero img {
-            max-width: 100%;
-            height: auto; 
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
-        }
-    </style>
-    <script type="text/javascript" src="./script.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
 </head>
 
-<body >
-    <header>
-        <nav class="navbar navbar-expand-sm" style="background-color: rgb(237, 237, 237);">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="./assets/rx-logo.png" alt="Logo" width="40" height="34"
-                        class="d-inline-block align-text-top p-1">
-                    Dose calculator</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto nav-underline me-auto mb-lg-0">
-                        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link " href="download.html">Download</a></li>
-                    </ul>
-                    <button class="btn btn-lg h1">
-                      <a class="text-dark" href="./help.html">
-                      <i class="bi bi-question-lg"></i>
-                  </a>
-                  </button>
-                </div>
-            </div>
+<body>
+    <header class="header">
+        <a class="logo" href="#home">
+            Dose <span>calculator</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Download</a>
+            <a href="#portfolio">Product</a>
+            <a href="#contact">Contact us</a>
         </nav>
+
     </header>
-    <div>
-    <section class="hero p-2">
-        <div class="container text-center">
-            <br />
-            <br />
-            <div class="row">
-                <div class="col-md-6 p-3">
-                    <h1 class="display-4">Welcome to the Dose Calculator App</h1>
-                    <hr class="my-4">
-                    <p class="lead">Streamline medication dose calculations for pediatric patients with our
-                        user-friendly Dose Calculator application.</p>
-                    <br>
-                    <a href="download.html" role="button" class="btn btn-outline-success btn-lg">Get Started</a>
-                </div>
-                <div class="col-md-6 py-3 ">
-                    <img class=" text-center shadow-lg rounded " src="./screenshots/Screenshot-home.jpg"
-                        alt="App Screenshot">
-                </div>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Welcome to the</h3>
+            <h1>Dose <span>Calculator</span></h1>
+            <p>
+                Streamline medication dose calculations for pediatric patients with our user-friendly Dose Calculator
+                application.
+            </p>
+            <div class="social-media">
+                <a href="https://boxicons.com/?query=insta">
+                    <i class="bx bxl-facebook"></i>
+                </a>
+                <a href="https://boxicons.com/?query=insta">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                <a href="https://boxicons.com/?query=insta">
+                    <i class="bx bxl-whatsapp"></i>
+                </a>
+                <a href="https://boxicons.com/?query=insta">
+                    <i class="bx bxl-instagram-alt"></i>
+                </a>
             </div>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+            <a href="#projects" class="btn">
+                Get Started
+            </a>
+
+        </div>
+        <div class="home-img">
+            <img src="./screenshots/Screenshot-home.jpg" alt="img"></img>
         </div>
     </section>
-    <footer class="text-center py-1" style=" bottom: 0; width: 100%;">
-        <div class="container-fluid">
-            <hr>
-            <p>&copy; 2023 Dose Calculator App</p>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">About This <span>Application</span></h2>
+            <p>The Dose Calculator application is designed to assist healthcare professionals and dispensary staff
+                in making accurate medication dose calculations for pediatric patients. The application simplifies
+                the process of converting between bodyweight and dose, allowing for quick and efficient
+                calculations.</p>
+            <h3>Main Features:</h3>
+            <div class="list">
+                <ul>
+                    <li>Fast-Lane Items: Quickly calculate recommended doses for common medications like paracetamol and
+                        ibuprofen. Copy instructions with a single click.</li>
+                    <li>Advanced Calculator: Enter dose in ml, convert to ideal body weight or convert the entered dose
+                        to the recommended dose for other provided medications, and copy instructions.</li>
+                    <li>Manual Calculator: Calculate personalized dose based on patient's weight, recommended dose, and
+                        medication strength.</li>
+                    <li>Auto-Copy Option: Streamline copying of dosage instructions. Enable "Auto-copy" for automatic
+                        copying when selecting Fast-Lane items.</li>
+                    <li>Auto-Minimize Feature: Enhance efficiency by minimizing the application after copying
+                        instructions.</li>
+                </ul>
+            </div>
+            <h3>Important Notes:</h3>
+            <div class="list">
+                <ul>
+                    <li>The Dose Calculator application provides accurate calculations based on recommended doses from
+                        the NZF website. However, individual patient circumstances and medical conditions may vary.</li>
+                    <li>The application is not a replacement for professional medical judgment and clinical
+                        decision-making. Always exercise caution and use your own discretion when utilizing the
+                        application.</li>
+                </ul>
+            </div>
+            <h3>Support and Feedback:</h3>
+            <div class="list">
+                <p>If you have any technical issues or suggestions for improving the Dose Calculator application, please
+                    <a href="#contact" class="contact-us">Contact us</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading">
+            Download and Install the <span>Dose Calculator</span>
+        </h2>
+        <div class="projects-container">
+            <div class="projects-box">
+                <i class='bx bxl-windows'></i>
+                <h3> Download for <span>Windows</span></h3>
+                <p>Click the link below to download the latest version of the application, and follow the Installation
+                    instructions to install the
+                    application. (to download older versions click <a class="contact-us" href="./oldApps.html">here</a>)
+                </p>
+                <a href="./assets/DoseCalculatorApp.msi" class="btn">
+                    Download Now
+                </a>
+                <p><strong>Please note : </strong> If you have an older version installed on your computer,
+                    please uninstall it before installing the new version.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Screenshots</span></h2>
+        <div class="portfolio-container">
+
+            <div class="portfolio-box">
+                <img src="./screenshots/Screenshot-home.jpg" alt="home-img">
+                <div class="portfolio-layer">
+                    <h4>Home screen</h4>
+                    <p>A quick and convenient way to calculate recommended doses for commonly used medications
+                        and strengths.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./screenshots/Screenshot-Advance1.jpg" alt="advance-img">
+                <div class="portfolio-layer">
+                    <h4>Advance Calculator</h4>
+                    <p>The advanced calculator provides a more comprehensive approach to dose calculations.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./screenshots/Screenshot-Manual.jpg" alt="manual-img">
+                <div class="portfolio-layer">
+                    <h4>Manual Calculator</h4>
+                    <p>The manual calculator allows for precise calculations based on patient-specific information -
+                        bodyweight, recommended dose and
+                        the medication's strength.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class='contact' id='contact'>
+        <h2 class='heading'>Contact <span>Us!</span></h2>
+
+        <form ref={form} onSubmit={sendEmail}>
+            <div class='input-box'>
+                <input type='text' placeholder='Full Name' name="name"></input>
+                <input type='email' placeholder='Email Address' name="email"></input>
+            </div>
+            <textarea name="message" cols="30" rows="10" placeholder='Your Message'></textarea>
+            <button type='submit' class='btn'>Send Message</button>
+        </form>
+    </section>
+
+    <footer class='footer' id='footer'>
+        <div class='footer-text'>
+            <p>Dose Calculator &copy; 2023 by Vivek Patel | All Rights Reserved.</p>
+        </div>
+
+        <div class='footer-icon'>
+            <a href='#home'><i class='bx bx-up-arrow-alt'></i></a>
         </div>
     </footer>
-    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
