@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+/* :root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+} */
+
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow: hidden;
+  margin: 1rem;
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  border-bottom: 2px solid var(--second-bg-color);
+}
+
+.header .sticky {
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+
+.logo-img {
+  height: 3rem;
+  width: 3.5rem;
+  margin-top: 1rem;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navbar a {
+  font-size: 1.7rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar .active {
+  color: var(--main-color);
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--main-color);
+}
+
+span {
+  color: var(--main-color);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.6rem;
+  color: var(--second-bg-color);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  box-shadow: none;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+.contact-us {
+  font-size: 1.6rem;
+  color: var(--main-color);
+}
+
+.help-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--second-bg-color);
+}
+
+
+.help-content .heading {
+  text-align: center;
+  font-size: 4.5rem;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+
+.help-content .list {
+  font-size: 1.2rem;
+}
+
+
+.help-content h3 {
+  font-size: 2.6rem;
+}
+.help-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+
+.help-content .list ul {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background-color: var(--second-bg-color);
+}
+
+.footer-text p {
+  font-size: 1.6rem;
+}
+
+.footer-icon a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  background-color: var(--main-color);
+  border-radius: 0.8rem;
+  transition: 0.5s ease;
+}
+
+.footer-icon a:hover {
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-icon a i {
+  font-size: 2.8rem;
+  color: var(--second-bg-color);
+}
+
+@media screen and (max-width: 1500px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  
+  .help-content .heading {
+    font-size: 3.6rem; 
+    margin-bottom: 3rem; 
+  }
+  .about-content h3,
+  .help-content h3,
+  .download-container h3,
+  .screenshots-layer h4 {
+    font-size: 1.8rem;
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+  .header {
+    padding: 2rem 3%;
+  }
+  
+  .footer {
+    padding: 2rem 3%;
+  }
+  
+}
+
+
+

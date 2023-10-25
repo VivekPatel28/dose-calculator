@@ -5,88 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Dose Calculator App helps healthcare professionals calculate accurate paracetamol, Ibuprofen and other medicines doses for kids. Simplify pediatric medication dosage with our user-friendly app.">
+        content="Dose Calculator App helps healthcare professionals calculate accurate paracetamol, Ibuprofen and other medicines dosage for kids. Simplify pediatric medication dosage with our user-friendly app. - Vivek Patel">
     <meta name="keywords"
-        content="paracetamol dose chart, paracetamol dose for kids, pediatric medication dosage, dose calculator app">
-    <title>Dose Calculator - Paracetamol / Ibuprofen Dose Chart for pediatric patient</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            text-decoration: none;
-            border: none;
-            outline: none;
-            scroll-behavior: smooth;
-            font-family: "Poppins", sans-serif;
-        }
-
-        html {
-            overflow-x: hidden;
-        }
-
-        .highlight {
-            background-color: yellow;
-        }
-
-        .hero {
-
-            padding: 50px 0;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-        }
-
-        .hero p {
-            font-size: 1.5rem;
-        }
-
-        .hero .btn {
-            font-size: 1rem;
-            padding: 10px 20px;
-            border-radius: 10px;
-        }
-
-        .hero img {
-            max-width: 100%;
-            height: auto;
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-        }
-
-        .navbar-brand {
-            font-weight: 600;
-        }
-    </style>
-    <script type="text/javascript" src="./script.js"></script>
-
+        content="paracetamol Dose chart, paracetamol dosage for kids, pediatric medication dosage, dose calculator app">
+    <title>Dose Calculator - Paracetamol / Ibuprofen Dose Chart for pediatric patient - by Vivek Patel </title>
+    <link rel="stylesheet" href="./style-help.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm"
-            style="background-image: url('./assets/vivid-background.jpg'); background-size: cover; background-position:inherit;">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    Dose Calculator</a>
-            </div>
+    <header class="header">
+        <a class="logo" href="./index.html#home">
+            Dose <span>calculator</span></a>
 
-        </nav>
     </header>
-    <div
-        style="background-image: url('./assets/vivid-background.jpg'); background-size: cover; background-position:inherit;">
-        <div class="container p-5 col-md-12">
-            <h2>Welcome to the Dose Calculator Help Center</h2>
-            <br />
-            <h4>About the Dose Calculator Application:</h4>
+
+    <section class="help-page">
+        <div class="help-content">
+            <h2 class="heading">Welcome to the Dose Calculator <span>Help Center</span></h2>
+        
+            <h3>About the Dose Calculator Application:</h3>
             <p>
                 The Dose Calculator application is a valuable tool designed to assist healthcare professionals,
                 including
@@ -96,84 +39,80 @@
                 effortless.
                 Please review the following sections to fully understand the features and usage of this application.
             </p>
-
-            <h4>Dose-calculator (Home Page):</h4>
+            <h3>Dose-calculator (Home Page):</h3>
             <p>
                 The home page offers a quick and convenient way to calculate recommended doses for commonly used
                 medications
                 and strengths. Notable features include:
             </p>
-            <ul>
-                <li>Fast-Lane Medications: Instantly calculate doses for paracetamol (250mg/5ml and 120mg/5ml) and
-                    ibuprofen
-                    (100mg/5ml) suspensions, among others.</li>
-                <li>Auto-Copy Instructions: With the click of a button, you can copy the generated dosage instructions.
-                    Enable "Auto-copy" from the settings menu to copy instructions automatically when selecting
-                    Fast-Lane
-                    items.</li>
-                <li>Auto-Minimize: Enhance efficiency by enabling "Auto-minimize." After copying instructions, the
-                    application
-                    will automatically minimize, allowing you to process the copied details seamlessly in your
-                    dispensing
-                    software.</li>
-            </ul>
-
-            <h4>Advanced Calculator (Accessible from Menu-bar):</h4>
+            <div class="list">
+                <ul>
+                    <li>Fast-Lane Medications: Instantly calculate doses for paracetamol (250mg/5ml and 120mg/5ml) and
+                        ibuprofen
+                        (100mg/5ml) suspensions, among others.</li>
+                    <li>Auto-Copy Instructions: With the click of a button, you can copy the generated dosage instructions.
+                        Enable "Auto-copy" from the settings menu to copy instructions automatically when selecting
+                        Fast-Lane
+                        items.</li>
+                    <li>Auto-Minimize: Enhance efficiency by enabling "Auto-minimize." After copying instructions, the
+                        application
+                        will automatically minimize, allowing you to process the copied details seamlessly in your
+                        dispensing
+                        software.</li>
+                </ul>
+            </div>
+            <h3>Advanced Calculator (Accessible from Menu-bar):</h3>
             <p>
                 The advanced calculator provides a more comprehensive approach to dose calculations. Key features
                 include:
             </p>
-            <ul>
-                <li>Enter Dose: Input the dose in milliliters (ml) for a specific medication.</li>
-                <li>Ideal Body Weight: Obtain the ideal body weight for the patient based on the entered dose.</li>
-                <li>Conversion Options: Convert the entered dose to the recommended dose for other provided medications.
-                </li>
-                <li>Copy Instructions: Easily copy the dosage instructions generated by the advanced calculator for
-                    further
-                    use.</li>
-            </ul>
+            <div class="list">
+                <ul>
+                    <li>Enter Dose: Input the dose in milliliters (ml) for a specific medication.</li>
+                    <li>Ideal Body Weight: Obtain the ideal body weight for the patient based on the entered dose.</li>
+                    <li>Conversion Options: Convert the entered dose to the recommended dose for other provided medications.
+                    </li>
+                    <li>Copy Instructions: Easily copy the dosage instructions generated by the advanced calculator for
+                        further
+                        use.</li>
+                </ul>
+            </div>
 
-            <h4>Manual Calculator (Accessible from Menu-bar):</h4>
-            <p>
-                The manual calculator allows for precise calculations based on patient-specific information. It offers:
-            </p>
-            <ul>
-                <li>Customized Calculations: Input the patient's bodyweight in kilograms, recommended dose per kilogram,
-                    and
-                    the medication's strength in mg/5ml.</li>
-                <li>Personalized Results: Obtain the recommended dose tailored to the patient for the specific
-                    medication.</li>
-            </ul>
-
-            <h4>Important Notes:</h4>
+            <h3>Important Notes:</h3>
+            <div class="list">
             <ul>
                 <li>The Dose Calculator application provides calculations based on the recommended doses from <a
-                        href="https://nzf.org.nz/">NZF</a>
+                        href="https://nzf.org.nz/" class="contact-us">NZF</a>
                     website. However, individual patient factors may impact dosing requirements.</li>
                 <li>The application is designed to facilitate calculations and should not replace professional medical
                     advice. Always exercise clinical judgment when using the calculated doses.</li>
             </ul>
+            </div>
 
-            <h4>Support and Feedback:</h4>
-            <p>
-                If you encounter technical issues or have suggestions for improving the Dose Calculator application,
-                please reach out at <a href="mailto:vivpatel228@gmail.com">vivpatel228@gmail.com</a>
-                or <a href="./index.html#contact">click here</a> for prompt assistance and valuable feedback.
-            </p>
-
+            <h3>Support and Feedback:</h3>
+            <div class="list">
+                <p>If you have any technical issues or suggestions for improving the Dose Calculator application, please
+                    reach out at <a href="mailto:vivpatel228@gmail.com" class="contact-us">vivpatel228@gmail.com</a>
+                    or <a href="./index.html#contact" class="contact-us">click here</a> for prompt assistance and valuable feedback.
+                </p>
+            </div>
             <p>
                 Thank you for choosing the Dose Calculator application. Your dedication to accurate dosing contributes
                 to
                 the safety and well-being of pediatric patients.
             </p>
+
         </div>
-        <footer class="text-center py-1" style=" bottom: 0; width: 100%;">
-            <div class="container-fluid">
-                <hr>
-                <p>Dose Calculator &copy; 2023 by Vivek Patel | All Rights Reserved.</p>
-            </div>
-        </footer>
-    </div>
+    </section>
+
+    <footer class='footer' id='footer'>
+        <div class='footer-text'>
+            <p>Dose Calculator &copy; 2023 by Vivek Patel | All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="./script.js"></script>
+
 </body>
 
 </html>
