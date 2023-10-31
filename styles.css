@@ -500,11 +500,11 @@ span {
 }
 
 .toast-error {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   top: 70px;
 }
 .toast-success {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   top: 70px;
 }
 
@@ -568,12 +568,12 @@ span {
   }
 
   .navbar {
-    position: fixed; /* Change position to fixed */
-    top: 60px; /* Set the distance from the top equal to the height of the menu icon */
+    position: fixed; 
+    top: 70px; 
     right: 0;
     width: 18rem;
     z-index: 1;
-    padding: 1rem 3%;
+    padding: 3% 3%;
     background-color: var(--bg-color);
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.9);
@@ -589,7 +589,7 @@ span {
   }
   .navbar a {
     display: block;
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin: 3rem 0;
   }
 
@@ -636,6 +636,10 @@ span {
 @media screen and (max-width: 550px) {
   html {
     font-size: 50%;
+  }
+  
+  .navbar {
+    top: 64px; 
   }
   .about-content p,
   .about-content .list li {
