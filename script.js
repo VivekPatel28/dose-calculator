@@ -43,7 +43,7 @@ ScrollReveal({
 ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
 
 ScrollReveal().reveal(
-  ".home-img, .projects-container, .portfolio-box, .contact form",
+  ".home-img, .download-container, .screenshots-box, .contact form",
   { origin: "bottom" }
 );
 
@@ -66,11 +66,21 @@ toastr.options.closeMethod = "slideUp";
 })();
 
 function sendMail() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+
+  if (!name || !email || !message) {
+    toastr.error("Please fill out all fields.", "Error");
+    return;
+  }
+
   var params = {
-    from_name: document.getElementById("name").value,
-    from_email: document.getElementById("email").value,
-    message: document.getElementById("message").value,
+    from_name: name,
+    from_email: email,
+    message: message,
   };
+
   emailjs.send("service_g7k0b2p", "template_8akkimr", params).then(
     function (response) {
       toastr.success("Email sent successfully!", "Success");
