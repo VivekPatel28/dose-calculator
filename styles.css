@@ -8,11 +8,11 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
+  font-family: 'XPLOR Bold', sans-serif;
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 70%;
   overflow-x: hidden;
 }
 
