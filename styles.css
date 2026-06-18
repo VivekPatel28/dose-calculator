@@ -23,11 +23,18 @@ html {
   --main-color: #0ef;
 } */
 
-:root {
-  --bg-color: #0f2525;
+/* :root {
+  --bg-color: #B6FF00;
   --second-bg-color: #143333;
   --text-color: #fff;
   --main-color: #64ccc5;
+} */
+
+:root {
+  --bg-color: #141414;
+  --second-bg-color: #3C1A47;
+  --text-color: #B6FF00;
+  --main-color: #2BEE34;
 }
 
 body {
